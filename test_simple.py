@@ -47,10 +47,10 @@ if __name__ == "__main__":
         )
     )
 
-    answer = convo.ask_with_tools(
+    answer = convo.ask(
         "What is 12 times 4?",
         tools=TOOL_SCHEMAS,
-        tool_functions=TOOL_REGISTRY
+        functions=TOOL_REGISTRY
     )
 
     print("Answer:", answer)

@@ -31,10 +31,10 @@ def main():
                 continue
                 
             print("Thinking...")
-            reply = convo.ask_with_tools(
+            reply = convo.ask(
                 user_input,
                 tools=TOOL_SCHEMAS,
-                tool_functions=TOOL_REGISTRY
+                functions=TOOL_REGISTRY
             )
             print(f"\nAgent: {reply}")
             print("-" * 50)
